@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbook Chatbot</title>
+    <link rel="stylesheet" href="./styles/textbookbot.css">
+</head>
+<body>
+    <template id="user_message">
+        <div class="usermessage">
+            <div class="usermessage_text">
+                <p></p>
+            </div>
+        </div>
+    </template>
+    <template id="ai_message">
+        <div class="aimessage">
+            <div class="aimessage_text">
+                <p></p>
+            </div>
+        </div>
+    </template>
+    <template id="chat_entry">
+        <div class="chat_ent flex">
+            <div class="del_img">
+                <img src="./resources/images/delete.svg" alt="User">
+            </div>
+            <h3></h3>
+        </div>
+    </template>
+    <div class="outercont flex">
+        <div class="sidebar flexvert">
+            <div class="icon flex">
+                <div class="iconimage">
+                    <img src="./resources/images/txtbk.svg" alt="Collegebot">
+                </div>
+                <h1>Textbook Bot</h1>
+            </div>
+            <div class="sidecont flexvert">
+                <div class="chats flexvert">
+                    <div class="newchat flex" id="newchat_button">
+                        <h3>New Chat</h3>
+                        <div class="plusicon">
+                        <img src="./resources/images/plus.png" alt="plus">
+                        </div>
+                    </div>
+                </div>
+                <div class="usertag flex">
+                    <div class="person_img">
+                        <img src="./resources/images/person.svg" alt="User">
+                    </div>
+                    <div class="user_info flexvert">
+                        <small>Signed in as,</small>
+                        <div class="username">User</div>
+                    </div>
+                    <div class="logout">
+                        <img src="./resources/images/Logout.svg" alt="logout">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="query_area">
+            <div class="chatcont flexvert">
+                <div class="head flex">
+                    <div class="headtext">
+                        <span class="big">Engineering Assist</span>
+                        <span class="small">querying <span class="small" id="headtitle"></span></span>
+                    </div>
+                    <nav class="flex">
+                        <button id="settings_button">Settings</button>
+                        <button id="home_button">Home</button>
+                    </nav>
+                </div>
+                <div class="rule"></div>
+                <div class="message_space">
+                </div>
+                <div class="input-container">
+                    <textarea class="query-input" placeholder="Type your query here"></textarea>
+                    <button class="submit_audio">
+                        <img src="./resources/images/mic.svg" alt="Submit">
+                    </button>
+                    <button class="submit-button">
+                        <img src="./resources/images/arrow.svg" alt="Submit">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/textbookbot.js"></script>
+</body>
+</html>

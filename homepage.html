@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/homepage.css">
+    <title>Home-page</title>
+</head>
+<body>
+    <header class="flex">
+        <h1>Engineering Assist</h1>
+        <nav class="flex">
+            <button id="settings_button">Settings</button>
+            <button id="logout_button">Log out</button>
+
+            <div>
+                <div id="profile_icon" class="flex">
+                    <img src="./resources/images/person.svg" alt="profile_icon">
+                    <div id="tooltip">signed in</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container flex">
+        <div class="frame left flexvert">
+            <h1 class="framehead">Query College Data</h1>
+            <select name="college_dropdown" id="college_dropdown">
+                <option value="" disabled selected>Select a college</option>
+            </select>
+        </div>
+        <div class="thinline"></div>
+        <div class="frame right flexvert">
+            <h1 class="framehead">Query a Textbook</h1>
+            <select name="textbook_dropdown" id="textbook_dropdown">
+                <option value="" disabled selected>Select a textbook</option>
+            </select>
+            <p class="or">OR</p>
+            <label for="file_upload" class="file-upload-label">Upload a Textbook</label>
+            <input type="file" id="file_upload" name="file_upload" accept=".pdf" class="file-upload-input">
+            <span id="file_name" class="file-name"></span>
+        </div>
+    </div>
+    <script src="./scripts/homepage.js"></script>
+</body>
+</html>

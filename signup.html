@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign-up</title>
+    <link rel="stylesheet" href="./styles/signup.css">
+</head>
+<body>
+    <div class="outercont">
+    <div class="container">
+        <div class="left-section">
+            <h2>Engineering<br>Assist</h2>
+        </div>
+        <div class="right-section">
+            <h1 id="form-heading">Sign Up</h1>
+            <form id="auth-form">
+                <input type="text" name="username" placeholder="Name" required>
+                <input type="text" name="email" placeholder="Email-id" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+                <button type="submit" class="continue">Continue</button>
+            </form>
+            <div class="oauth-section">
+                <button id="google-signin" class="oauth-button">
+                </button>
+            </div>
+            <div class="register-link">
+                Already signed up? <a href="./index.html" id="toggle-link">Sign In</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://accounts.google.com/gsi/client"></script>
+    <script src="./scripts/signup.js"></script>
+</body>
+</html>

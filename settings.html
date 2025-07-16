@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="./styles/settings.css">
+</head>
+<body>
+    <div class="outercont flex">
+        <div class="sidebar flexvert">
+            <button class="back-button" id="back-button">
+                <div class="flex">
+                <img src="./resources/images/backarrow.svg" alt="Back Arrow" class="back-arrow">
+                <div>Back</div>
+                </div>
+            </button>
+            <button class="sidebar-button active">User Settings</button>
+            <button class="sidebar-button" id="admin_button"><a href="./admin.html">Admin Options</a></button>
+        </div>
+        <div class="thinline"></div>
+        <div class="main-content flexvert">
+            <div class="setting-item flex">
+                <label for="temperature">Temperature</label>
+                <input type="range" id="temperature" class="slider" min="0" max="1" step="0.01" value="0.0">
+                <span id="temperatureValue">0.0</span>
+            </div>
+            <div class="setting-item flex">
+                <label for="tokenSize">Token size</label>
+                <input type="range" id="tokenSize" class="slider" min="50" max="500" step="1" value="50">
+                <span id="tokenSizeValue">50</span>
+            </div>
+            <div class="setting-item dropdown flex">
+                <label for="selectModel">Select Model</label>
+                <select id="selectModel">
+                    <option value="Llama3.1" selected>Llama 3.1</option>
+                </select>
+            </div>
+            <button class="save-button" id="save-button">Save</button>
+        </div>
+    </div>
+    <script src="./scripts/settings.js"></script>
+</body>
+</html>

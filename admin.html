@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="./styles/admin.css">
+</head>
+<body>
+    <div class="outercont flex">
+        <div class="sidebar flexvert">
+            <button class="back-button" id="back-button">
+                <div class="flex">
+                <img src="./resources/images/backarrow.svg" alt="Back Arrow" class="back-arrow">
+                <div>Back</div>
+                </div>
+            </button>
+            <button class="sidebar-button"><a href="./settings.html">User Settings</a></button>
+            <button class="sidebar-button active">Admin Options</button>
+        </div>
+        <div class="thinline"></div>
+        <div class="main-content flexvert">
+            <div class="setting-item flex">
+                <label for="college">Add college to list</label>
+                <input type="text" id="college" placeholder="Enter college name">
+                <button class="confirm" id="confirm_college">Confirm</button>
+            </div>
+            <div class="setting-item flex">
+                <label for="college_dropdown">Add files to RAG database</label>
+                <select name="college_dropdown" id="college_dropdown">
+                    <option value="" disabled selected>Select college Database to add to</option>
+                </select>
+                <input type="file" id="file_upload" accept=".pdf" class="file">
+                <button class="confirm_file" id="confirm_file">Confirm</button>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/admin.js"></script>
+</body>
+</html>
